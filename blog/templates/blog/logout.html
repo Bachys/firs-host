@@ -1,0 +1,13 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="logout">
+    <h2 class="">Вы вышли</h2>
+<!--    <form class="" action="{% url 'logout' %}"></form>-->
+    <a href="{% url 'login' %}">Войти снова</a>
+</div>
+
+
+
+{% endblock %}

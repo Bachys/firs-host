@@ -1,0 +1,13 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+<h1 class="">{{ title }}</h1>
+<form class="" method="post" action="">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Отправить</button>
+
+</form>
+
+{% endblock %}
